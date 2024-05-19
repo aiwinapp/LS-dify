@@ -196,7 +196,9 @@
 .markdown-body [type="reset"],
 .markdown-body [type="submit"] {
   -webkit-appearance: button;
+  appearance: button;
 }
+
 
 .markdown-body [type="checkbox"],
 .markdown-body [type="radio"] {
@@ -336,7 +338,7 @@
 .markdown-body blockquote {
   margin: 0;
   padding: 0 8px;
-  border-left: 2px solid #2970FF;
+  border-left: 2px solid #008778;
 }
 
 .markdown-body ul,

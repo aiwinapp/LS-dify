@@ -12,7 +12,7 @@ import { ModalContextProvider } from '@/context/modal-context'
 const Layout = ({ children }: { children: ReactNode }) => {
   return (
     <>
-      <GA gaType={GaType.admin} />
+      {/* <GA gaType={GaType.admin} /> */}
       <SwrInitor>
         <AppContextProvider>
           <EventEmitterContextProvider>
@@ -32,7 +32,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
 }
 
 export const metadata = {
-  title: 'Dify',
+  title: 'LeadScanner',
 }
 
 export default Layout

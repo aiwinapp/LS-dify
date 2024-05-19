@@ -1,28 +1,28 @@
 const translation = {
-  title: '召回测试',
-  desc: '基于给定的查询文本测试知识库的召回效果。',
-  dateTimeFormat: 'YYYY-MM-DD HH:mm',
-  recents: '最近查询',
+  title: 'Тестирование выборки',
+  desc: 'Тестирование эффективности поиска знаний на основе предоставленного текстового запроса.',
+  dateTimeFormat: 'DD/MM/YYYY HH:mm A',
+  recents: 'Последние',
   table: {
     header: {
-      source: '数据源',
-      text: '文本',
-      time: '时间',
+      source: 'Источник',
+      text: 'Текст',
+      time: 'Время',
     },
   },
   input: {
-    title: '源文本',
-    placeholder: '请输入文本，建议使用简短的陈述句。',
-    countWarning: '不超过 200 个字符',
-    indexWarning: '仅支持高质量模式知识库',
-    testing: '测试',
+    title: 'Исходный текст',
+    placeholder: 'Пожалуйста, введите текст, рекомендуется короткое декларативное предложение.',
+    countWarning: 'До 200 символов.',
+    indexWarning: 'Только высококачественные знания.',
+    testing: 'Тестирование',
   },
   hit: {
-    title: '召回段落',
-    emptyTip: '召回测试结果将展示在这里',
+    title: 'ВЫБРАННЫЕ АБЗАЦЫ',
+    emptyTip: 'Результаты тестирования выборки отобразятся здесь',
   },
-  noRecentTip: '最近无查询结果',
-  viewChart: '查看向量图表',
+  noRecentTip: 'Здесь нет результатов последних запросов',
+  viewChart: 'ПОСМОТРЕТЬ ВЕКТОРНУЮ ДИАГРАММУ',
 }
 
 export default translation

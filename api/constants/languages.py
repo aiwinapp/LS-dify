@@ -1,6 +1,6 @@
 
 
-languages = ['en-US', 'zh-Hans', 'zh-Hant', 'pt-BR', 'es-ES', 'fr-FR', 'de-DE', 'ja-JP', 'ko-KR', 'ru-RU', 'it-IT', 'uk-UA', 'vi-VN', 'pl-PL']
+languages = ['ru-RU','en-US', 'zh-Hans', 'zh-Hant', 'pt-BR', 'es-ES', 'fr-FR', 'de-DE', 'ja-JP', 'ko-KR',  'it-IT', 'uk-UA', 'vi-VN', 'pl-PL']
 
 language_timezone_mapping = {
     'en-US': 'America/New_York',

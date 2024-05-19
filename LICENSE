@@ -1,38 +1,35 @@
-# Open Source License
+# Лицензия с открытым исходным кодом
 
-Dify is licensed under the Apache License 2.0, with the following additional conditions:
+Dify лицензируется по лицензии Apache 2.0 с следующими дополнительными условиями:
 
-1. Dify may be utilized commercially, including as a backend service for other applications or as an application development platform for enterprises. Should the conditions below be met, a commercial license must be obtained from the producer:
+1. Dify может использоваться в коммерческих целях, включая использование в качестве серверной службы для других приложений или в качестве платформы для разработки приложений для предприятий. При выполнении нижеуказанных условий необходимо получить коммерческую лицензию от производителя:
 
-a. Multi-tenant SaaS service: Unless explicitly authorized by Dify in writing, you may not use the Dify source code to operate a multi-tenant environment. 
-    - Tenant Definition: Within the context of Dify, one tenant corresponds to one workspace. The workspace provides a separated area for each tenant's data and configurations.
+a. Многоарендная SaaS-служба: Если иное не разрешено Dify в письменной форме, вы не можете использовать исходный код Dify для работы в многоарендной среде.
+    - Определение арендатора: В контексте Dify один арендатор соответствует одному рабочему пространству. Рабочее пространство предоставляет отдельную область для данных и конфигураций каждого арендатора.
 
-b. LOGO and copyright information: In the process of using Dify's frontend components, you may not remove or modify the LOGO or copyright information in the Dify console or applications. This restriction is inapplicable to uses of Dify that do not involve its frontend components.
+b. Логотип и информация об авторских правах: В процессе использования фронтенд-компонентов Dify вы не можете удалять или изменять логотип или информацию об авторских правах в консоли или приложениях Dify. Это ограничение не применяется к использованию Dify, не связанному с его фронтенд-компонентами.
 
-Please contact business@dify.ai by email to inquire about licensing matters.
+Пожалуйста, свяжитесь с business@dify.ai по электронной почте для получения информации о лицензировании.
 
-2. As a contributor, you should agree that:
+2. В качестве участника вы должны согласиться с тем, что:
 
-a. The producer can adjust the open-source agreement to be more strict or relaxed as deemed necessary.
-b. Your contributed code may be used for commercial purposes, including but not limited to its cloud business operations.
+a. Производитель может изменять соглашение об открытом исходном коде, делая его более строгим или более мягким по мере необходимости.
+b. Ваш внесенный код может использоваться в коммерческих целях, включая, но не ограничиваясь облачными бизнес-операциями.
 
-Apart from the specific conditions mentioned above, all other rights and restrictions follow the Apache License 2.0. Detailed information about the Apache License 2.0 can be found at http://www.apache.org/licenses/LICENSE-2.0.
+Помимо указанных выше условий, все остальные права и ограничения следуют лицензии Apache 2.0. Подробную информацию о лицензии Apache 2.0 можно найти на http://www.apache.org/licenses/LICENSE-2.0.
 
-The interactive design of this product is protected by appearance patent.
+Интерактивный дизайн этого продукта защищен патентом на внешний вид.
 
 © 2024 LangGenius, Inc.
 
 
 ----------
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+Лицензируется по лицензии Apache, версия 2.0 (далее "Лицензия");
+вы не можете использовать этот файл иначе, чем в соответствии с Лицензией.
+Вы можете получить копию Лицензии по адресу
 
     http://www.apache.org/licenses/LICENSE-2.0
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+Если это не требуется применимым законодательством или не согласовано в письменной форме, программное обеспечение, распространяемое по Лицензии, распространяется на условиях "КАК ЕСТЬ", БЕЗ ГАРАНТИЙ ИЛИ УСЛОВИЙ ЛЮБОГО РОДА, явных или подразумеваемых.
+См. Лицензию для получения конкретных разрешений и ограничений по Лицензии.

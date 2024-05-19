@@ -1,6 +1,6 @@
 const translation = {
   title: 'Инструменты',
-  createCustomTool: 'Создать инструмент',
+  createCustomTool: 'Создать новый',
   type: {
     all: 'Все',
     builtIn: 'Все',
