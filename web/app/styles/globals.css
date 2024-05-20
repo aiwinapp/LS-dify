@@ -132,10 +132,18 @@ button:focus-within {
   background-clip: text;
   text-fill-color: transparent;
 }
-
+.text-primary-600 {
+  color: #008778 !important;
+}
+.bg-primary-600 {
+  background-color: #f3f4f6 !important;
+}
+.link {
+  color: #008778 !important;
+}
 /* overwrite paging active dark model style  */
 [class*=style_paginatio] li .text-primary-600 {
-  color: rgb(28 100 242);
+  color: #008778 !important;
   background-color: rgb(235 245 255);
 }
 

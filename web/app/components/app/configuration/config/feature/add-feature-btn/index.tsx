@@ -26,7 +26,7 @@ const AddFeatureBtn: FC<IAddFeatureBtnProps> = ({
     >
       <div
         className='flex items-center h-8 space-x-2 px-3
-        border border-primary-100 rounded-lg bg-primary-25 hover:bg-primary-50 cursor-pointer
+        border border-gray-100 rounded-lg bg-gray-25 hover:bg-gray-50 cursor-pointer
         text-xs font-semibold text-primary-600 uppercase
       '
         onClick={onClick}

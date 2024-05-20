@@ -32,19 +32,24 @@ const Header: FC<Props> = ({
 
   const needAuth = collection?.allow_delete || collection?.type === CollectionType.model
   const isAuthed = collection.is_team_authorization
+
+  // Проверка наличия перевода, если нет - используем en_US
+  const label = collection.label[language] || collection.label['en_US']
+  const description = collection.description?.[language] || collection.description?.['en_US']
+
   return (
     <div className={cn(isInToolsPage ? 'py-4 px-6' : 'py-[11px] pl-4 pr-3', 'flex justify-between items-start border-b border-gray-200')}>
       <div className='flex items-start w-full'>
         {icon}
         <div className='ml-3 grow w-0'>
           <div className='flex items-center h-6 space-x-1'>
-            <div className={cn(isInDebugPage && 'truncate', 'text-base font-semibold text-gray-900')}>{collection.label[language]}</div>
+            <div className={cn(isInDebugPage && 'truncate', 'text-base font-semibold text-gray-900')}>{label}</div>
             <div className='text-xs font-normal text-gray-500'>·</div>
             <div className='text-xs font-normal text-gray-500'>{t('tools.author')}&nbsp;{collection.author}</div>
           </div>
-          {collection.description && (
+          {description && (
             <div className={cn('leading-[18px] text-[13px] font-normal text-gray-500')}>
-              {collection.description[language]}
+              {description}
             </div>
           )}
         </div>

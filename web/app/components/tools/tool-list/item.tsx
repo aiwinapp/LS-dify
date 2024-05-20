@@ -40,6 +40,13 @@ const Item: FC<Props> = ({
   const [showDetail, setShowDetail] = useState(false)
   const addBtn = <Button className='shrink-0 flex items-center h-7 !px-3 !text-xs !font-medium !text-gray-700' disabled={added || !collection.is_team_authorization} onClick={() => onAdd?.(payload)}>{t(`common.operation.${added ? 'added' : 'add'}`)}</Button>
 
+  const label = payload.label[language] || payload.label['en_US'] || 'Label not available'
+  const description = payload.description[language] || payload.description['en_US'] || 'Description not available'
+
+  if (!payload.label[language] || !payload.description[language]) {
+    console.warn(`Missing translation for language: ${language}`, payload)
+  }
+
   return (
     <>
       <div
@@ -49,9 +56,9 @@ const Item: FC<Props> = ({
         <div className='flex items-start w-full'>
           {icon}
           <div className='ml-3 w-0 grow'>
-            <div className={cn('text-base font-semibold text-gray-900 truncate')}>{payload.label[language]}</div>
+            <div className={cn('text-base font-semibold text-gray-900 truncate')}>{label}</div>
             <div className={cn('leading-[18px] text-[13px] font-normal text-gray-500')}>
-              {payload.description[language]}
+              {description}
             </div>
           </div>
         </div>

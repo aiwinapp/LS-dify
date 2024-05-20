@@ -1,71 +1,72 @@
 # Dify Frontend
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Это проект [Next.js](https://nextjs.org/), созданный с помощью [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
-### Run by source code
-To start the web frontend service, you will need [Node.js v18.x (LTS)](https://nodejs.org/en) and [NPM version 8.x.x](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/).
+## Начало работы
+### Запуск из исходного кода
+Для запуска веб-фронтенд сервиса вам понадобятся [Node.js v18.x (LTS)](https://nodejs.org/en) и [NPM версии 8.x.x](https://www.npmjs.com/) или [Yarn](https://yarnpkg.com/).
 
-First, install the dependencies:
+Сначала установите зависимости:
 
 ```bash
 npm install
-# or
+# или
 yarn install --frozen-lockfile
 ```
 
-Then, configure the environment variables. Create a file named `.env.local` in the current directory and copy the contents from `.env.example`. Modify the values of these environment variables according to your requirements:
+Затем настройте переменные окружения. Создайте файл с именем `.env.local` в текущем каталоге и скопируйте содержимое из `.env.example`. Измените значения этих переменных окружения в соответствии с вашими требованиями:
 ```
-# For production release, change this to PRODUCTION
+# Для выпуска в производство измените это на PRODUCTION
 NEXT_PUBLIC_DEPLOY_ENV=DEVELOPMENT
-# The deployment edition, SELF_HOSTED
+# Редакция развертывания, SELF_HOSTED
 NEXT_PUBLIC_EDITION=SELF_HOSTED
-# The base URL of console application, refers to the Console base URL of WEB service if console domain is
-# different from api or web app domain.
-# example: http://cloud.dify.ai/console/api
+# Базовый URL консольного приложения, относится к базовому URL консоли веб-сервиса, если домен консоли
+# отличается от домена API или веб-приложения.
+# пример: http://cloud.dify.ai/console/api
 NEXT_PUBLIC_API_PREFIX=http://localhost:5001/console/api
-# The URL for Web APP, refers to the Web App base URL of WEB service if web app domain is different from
-# console or api domain.
-# example: http://udify.app/api
+# URL для веб-приложения, относится к базовому URL веб-приложения веб-сервиса, если домен веб-приложения
+# отличается от домена консоли или API.
+# пример: http://udify.app/api
 NEXT_PUBLIC_PUBLIC_API_PREFIX=http://localhost:5001/api
 
 # SENTRY
 NEXT_PUBLIC_SENTRY_DSN=
 ```
 
-Finally, run the development server:
+Наконец, запустите сервер разработки:
 
 ```bash
 npm run dev
-# or
+# или
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Откройте [http://localhost:3000](http://localhost:3000) в вашем браузере, чтобы увидеть результат.
 
-You can start editing the file under folder `app`. The page auto-updates as you edit the file.
+Вы можете начать редактирование файлов в папке `app`. Страница автоматически обновляется при редактировании файла.
 
-## Deploy
-### Deploy on server
-First, build the app for production:
+## Развертывание
+### Развертывание на сервере
+Сначала соберите приложение для производства:
 ```bash
 npm run build
 ```
 
-Then, start the server:
+Затем запустите сервер:
 ```bash
 npm run start
 ```
 
-If you want to customize the host and port:
+Если вы хотите настроить хост и порт:
 ```bash
 npm run start --port=3001 --host=0.0.0.0
 ```
 
-## Lint Code
-If your IDE is VSCode, rename `web/.vscode/settings.example.json` to `web/.vscode/settings.json` for lint code setting.
+## Линтинг кода
+Если ваш IDE - VSCode, переименуйте `web/.vscode/settings.example.json` в `web/.vscode/settings.json` для настройки линтинга кода.
 
-## Documentation
-Visit https://docs.dify.ai/getting-started/readme to view the full documentation.
+## Документация
+Посетите https://docs.dify.ai/getting-started/readme, чтобы просмотреть полную документацию.
 
-## Community
-The Dify community can be found on [Discord community](https://discord.gg/5AEfbxcd9k), where you can ask questions, voice ideas, and share your projects.
+## Сообщество
+Сообщество Dify можно найти на [Discord community](https://discord.gg/5AEfbxcd9k), где вы можете задавать вопросы, высказывать идеи и делиться своими проектами.
+

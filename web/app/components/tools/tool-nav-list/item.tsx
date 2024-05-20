@@ -21,6 +21,8 @@ const Item: FC<Props> = ({
 }) => {
   const { locale } = useContext(I18n)
   const language = getLanguage(locale)
+  const label = payload.label[language] || payload.label['en_US'] // Проверка на наличие перевода
+
   return (
     <div
       className={cn(isCurrent && 'bg-white shadow-xs rounded-lg', 'mt-1 flex h-9 items-center px-2 space-x-2 cursor-pointer')}
@@ -42,7 +44,7 @@ const Item: FC<Props> = ({
             background={payload.icon.background}
           />
         )}
-      <div className={cn(isCurrent && 'text-primary-600 font-semibold', 'leading-5 text-sm font-normal truncate')}>{payload.label[language]}</div>
+      <div className={cn(isCurrent && 'text-primary-600 font-semibold', 'leading-5 text-sm font-normal truncate')}>{label}</div>
 
     </div>
   )
