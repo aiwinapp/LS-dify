@@ -87,7 +87,7 @@ function AppCard({
   const appUrl = `${app_base_url}/${appMode}/${access_token}`
   const apiUrl = appInfo?.api_base_url
 
-  let bgColor = 'bg-primary-50 bg-opacity-40'
+  let bgColor = 'bg-purple-50 bg-opacity-40'
   if (cardType === 'api')
     bgColor = 'bg-purple-50'
 
